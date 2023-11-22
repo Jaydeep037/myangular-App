@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-basic';
+
+  value:string ='';
+
+  onClick(inputString : string){
+this.value = inputString;
+  }
+
+  onSearch(inputString : string){
+  this.value = inputString;
+  }
 }
